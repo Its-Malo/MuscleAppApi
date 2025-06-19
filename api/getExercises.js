@@ -12,8 +12,8 @@ const client = new MongoClient(uri, {
 module.exports = async (req, res) => {
 	try {
 		await client.connect();
-		const db = client.db("musclesApp");
-		const exercises = await db.collection("exercises").find({}).toArray();
+		const db = client.db("MuscleApp");
+		const exercises = await db.collection("Exercises").find({}).toArray();
 		res.status(200).json(exercises);
 	} catch (error) {
 		res.status(500).json({ error: error.toString() });

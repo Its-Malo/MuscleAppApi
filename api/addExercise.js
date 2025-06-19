@@ -16,8 +16,8 @@ module.exports = async (req, res) => {
 
 	try {
 		await client.connect();
-		const db = client.db("musclesApp");
-		const result = await db.collection("exercises").insertOne(req.body);
+		const db = client.db("MuscleApp");
+		const result = await db.collection("Exercises").insertOne(req.body);
 		res.status(201).json(result);
 	} catch (error) {
 		res.status(500).json({ error: error.toString() });
