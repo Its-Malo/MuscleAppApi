@@ -1,0 +1,16 @@
+{
+  "name": "muscleapp-api",
+  "version": "1.0.0",
+  "description": "Vercel backend for MuscleApp using MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "mongodb": "^6.17.0"
+  }
+}
