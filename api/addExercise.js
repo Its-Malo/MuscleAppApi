@@ -6,7 +6,9 @@ const client = new MongoClient(uri, {
 		version: ServerApiVersion.v1,
 		strict: true,
 		deprecationErrors: true,
-	}
+	},
+	tls: true,
+	tlsAllowInvalidCertificates: true
 });
 
 module.exports = async (req, res) => {
